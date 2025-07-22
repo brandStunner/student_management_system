@@ -17,6 +17,7 @@ student_profile = {
 
 student_key = f"student_{len(student_directory)+1}"
 student_directory[student_key] = student_profile
+print(student_directory)
 
 print("Press enter to add another student or q to stop")
 another_student = input("Do you want to add another student? ").lower()
@@ -36,6 +37,7 @@ if another_student != "q":
     
     student_key = f"student_{len(student_directory)+1}"
     student_directory[student_key] = student_profile
+    print(student_directory)
     
     another_student = input("Do you want to add another student? ").lower()
     if another_student != "q":
@@ -53,6 +55,7 @@ if another_student != "q":
         
         student_key = f"student_{len(student_directory)+1}"
         student_directory[student_key] = student_profile
+        print(student_directory)
         
         another_student = input("Do you want to add another student? ").lower()
         if another_student != "q":
@@ -70,7 +73,8 @@ if another_student != "q":
             
             student_key = f"student_{len(student_directory)+1}"
             student_directory[student_key] = student_profile
-            
+            print(student_directory)
+
             another_student = input("Do you want to add another student? ").lower()
             if another_student != "q":
                 name = input("Enter your full name: ").strip().capitalize()
@@ -87,6 +91,7 @@ if another_student != "q":
                 
                 student_key = f"student_{len(student_directory)+1}"
                 student_directory[student_key] = student_profile
+                print(student_directory)
 
 # Display student information
 print("\n--- STUDENT DIRECTORY ---")
